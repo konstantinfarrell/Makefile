@@ -6,7 +6,7 @@ REQUIREMENTS = requirements.txt
 
 run:
 	clear
-	$(PYTHON) main.py
+	$(VENV_DIR)/bin/$(PYTHON) main.py
 
 init:
 	clear
