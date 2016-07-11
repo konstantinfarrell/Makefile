@@ -37,6 +37,6 @@ $(VENV_DIR):
 	then \
 		$(VENV_DIR)/bin/pip install -r requirements.txt ; \
 	else \
-		$(VENV_DIR)/bin/pip install flake8 ; \
+		$(VENV_DIR)/bin/pip install flake8 coverage; \
 		$(VENV_DIR)/bin/pip freeze > requirements.txt ; \
 	fi;

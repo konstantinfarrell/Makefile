@@ -11,3 +11,8 @@ First create a virtualenv and install some basic requirements.
 Then run your python code.
 
     make
+
+You can run unit tests with or without line coverage.
+
+    make
+    make coverage
