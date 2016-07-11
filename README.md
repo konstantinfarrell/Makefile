@@ -14,5 +14,5 @@ Then run your python code.
 
 You can run unit tests with or without line coverage.
 
-    make
+    make test
     make coverage
