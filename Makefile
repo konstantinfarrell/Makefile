@@ -18,9 +18,18 @@ clean:
 	find . -iname "*.pyo" -delete
 	find . -iname "__pycache__" -delete
 
+test:
+	clear
+	$(VENV_DIR)/bin/$(PYTHON) -m unittest discover
+
+coverage:
+	clear
+	$(VENV_DIR)/bin/$(PYTHON) -m coverage run -m unittest discover
+	$(VENV_DIR)/bin/$(PYTHON) -m coverage report -m
+
 pep8:
 	clear
-	$(VENV_DIR)/bin/flake8 main.py
+	$(VENV_DIR)/bin/flake8 .
 
 $(VENV_DIR):
 	virtualenv $(VENV_DIR)
