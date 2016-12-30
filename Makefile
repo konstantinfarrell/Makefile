@@ -46,6 +46,6 @@ $(VENV_DIR):
 	then \
 		$(VENV_DIR)/bin/pip install -r $(REQUIREMENTS); \
 	else \
-		$(VENV_DIR)/bin/pip install flake8 coverage; \
+		$(VENV_DIR)/bin/pip install flake8 coverage isort; \
 		$(VENV_DIR)/bin/pip freeze > $(REQUIREMENTS); \
 	fi;
